@@ -317,6 +317,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-margin-top: 120px;
   text-align: center;
   animation: fade-up 560ms ease both;
 }
@@ -869,6 +870,16 @@ img {
     max-width: 620px;
   }
 
+  .trending-section {
+    grid-template-columns: 1fr;
+  }
+
+  .trending-visual,
+  .trending-placeholder,
+  .trending-image {
+    min-height: 280px;
+  }
+
   .hero-section {
     min-height: 560px;
     padding-top: 64px;
@@ -905,7 +916,7 @@ img {
   }
 
   .trending-content {
-    min-height: 340px;
+    min-height: auto;
   }
 
   .blog-card {
@@ -1000,10 +1011,12 @@ img {
 
   .trending-section {
     width: 100%;
+    grid-template-columns: 1fr;
   }
 
   .trending-visual,
-  .trending-placeholder {
+  .trending-placeholder,
+  .trending-image {
     min-height: 220px;
   }
 
